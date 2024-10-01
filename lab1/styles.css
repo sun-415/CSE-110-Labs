@@ -1,7 +1,7 @@
 .section {
     display: inline-block;
     width: 100%;
-    scroll-margin-top: 49.5px; /*adjust the offset jump position*/
+    scroll-margin-top: 50px; /*adjust the offset jump position*/
     padding-left: 20px;
 }
 
@@ -16,14 +16,16 @@
 }
 
 
+#section2 h1{
+    color: white;
+}
 
+#collegeLogos {
+    padding-right: 10px;
+}
 
 #section2 {
     background-image: url('https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg');
-}
-
-#section2 h2{
-    color: white;
 }
 
 #section2 p{
@@ -75,7 +77,7 @@ p{
     font-size: 28px;
 }
 
-#logo {
+#ucsdLogo {
     max-width: 400px;
     padding-left: 20px;
 }
@@ -99,4 +101,40 @@ p{
 
 .box p{
     margin: 0;
+}
+
+
+
+/* Making the web page responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Hides the navbar links when screen is smaller than 800px
+  Note to always define @media queries after your default styles, 
+  at the end of the .css file*/
+@media (max-width: 800px){
+    .nav, ul, li, a{
+        display: none;
+    }
+
+    #ucsdLogo {
+        max-width: 75%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+    }
+
 }
