@@ -36,7 +36,7 @@
 
 /* Making the Navbar */
 .navbar{
-    position: sticky;
+    position: sticky; /*Makes this thing to stick whatever containing it which is the body*/
     top: 0;
 }
 
