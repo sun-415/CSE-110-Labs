@@ -100,28 +100,17 @@
            this.style.backgroundColor = "";  // Reset background on blur
        });
 
-       document.getElementById("content").addEventListener("input", function () {
-           this.style.backgroundColor = "";  // alert pops up
-       });
-
-        // Get the title input field
-        const titleInput = document.getElementById("title");
-        titleInput.addEventListener("input", function(){
-            if(titleInput.value.length > 50){
-                titleInput.value = titleInput.value.slice(0, 50);
-                alert("TItle cannot exceed 50 characters.");
-            }
-        });
-
-
-
-
-
-
-        
+      //Alert pop up when title is over 50 chars
+      const titleInput = document.getElementById("title"); // Get the title input field
+      titleInput.addEventListener("input", function(){
+         if(titleInput.value.length > 50){
+            titleInput.value = titleInput.value.slice(0, 50);
+            alert("Title cannot exceed 50 characters.");
+         }
+      });
    </script>
+   
 </body>
-
 </html>
 
 
